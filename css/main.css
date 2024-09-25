@@ -1,16 +1,53 @@
 body {
-  font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  font-family: 'arial rounded MT BOLD', Helvetica, sans-serif;
+  background-color:aliceblue;
   line-height: 1.5;
   color:black;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,{
-  font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+  color: grey;
+}
+
+a:focus{
+  outline: 2px solid black;
+  margin-bottom:2px;
+}
+
+/* skip-link edits */
+.skip-links{
+  list-style: none;
+  margin: 0;
+  padding:0;
+
+}
+
+.skip-links a{
+  position: absolute;
+  top: -5em;
+  background-color: black;
+  color: aliceblue;
+  padding: 5em 1 em;
+  font-weight: bolder;
+  z-index: 100;
+}
+
+.skip-links a:focus{
+  top:0;
+}
+
+
+
+h2,h3{
+  font-family: 'arial', 'Roboto', Helvetica, sans-serif;
 }
 
 .container {
@@ -19,10 +56,47 @@ h3,{
   padding: 0 1rem;
 }
 
+/* Header Styles */
+.site-header {
+  background-color:black;
+  color: white;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-family: 'Bahnschrift';
+}
+
+
+.banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: left;
+  font-weight: normal;
+}
+
+/* Main Content Styles */
+.main-content {
+  padding: 2em;
+  background-color: white;
+}
+
+.main-content h2 {
+  font-family: "Bahnschrift";
+  margin-top: 0;
+}
+.owner h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 img {
   width: 100%;
 }
-
+  
 .main-nav ul {
   list-style: none;
   display: flex;
@@ -43,14 +117,28 @@ img {
   font-size: 1.25rem;
 }
 
+
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+form label {
+  font-weight: bold;
+}
+
+
 form input,
 form textarea {
   display: block;
   border:1.5px solid rgb(71, 69, 69);
   border-radius: 5px;
-  width: 100%;
+  width: 97%;
   margin-bottom: 1rem;
-  padding: 0.5em ;
+  padding: 0.5em;
 }
 
 form textarea {
@@ -63,10 +151,12 @@ form textarea {
 form button {
   background-color: rgb(71, 69, 69);
   color: aliceblue;
-  border: 2px solid black;
+  border: 1px solid black;
   padding: 1rem;
   text-transform: uppercase;
   cursor: pointer;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 form button:hover{
