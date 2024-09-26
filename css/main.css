@@ -47,7 +47,7 @@ a:focus{
   top: -5em;
   background-color: black;
   color: aliceblue;
-  padding: 5em  1em;
+  padding: 5em 1 em;
   font-weight: bolder;
   z-index: 100;
 }
@@ -159,7 +159,7 @@ form button {
 }
 
 form button:hover{
-  background-color:grey;
+  background-color:  grey;
 }
 /* FOOTER DESIGN  ADDED  */
 .site-footer {
